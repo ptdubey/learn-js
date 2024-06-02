@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New level of code</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+
+  <script>
+    // createElement('div') are used to create a new  element
+    const div = document.createElement("div");
+    console.log(div);
+
+    // className are used to give the class of the element
+
+    div.className = "main";
+    // here we give to the random id of the element
+
+    div.id = Math.round(Math.random() * 10 + 1);
+
+    // here we adda title of the div
+    div.setAttribute("title", "generate title");
+
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+    const addText = document.createTextNode("Fucker Boy");
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+  </script>
+</html>
