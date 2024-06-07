@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    const randomDate = function () {
+      for (let i = 0; i < 100; i++) {
+        console.log(str, Date.now());
+      }
+    };
+
+    let intervalId;
+    const sayDate = function () {
+      if (!intervalID) {
+        intervalId = setInterval(sayDate, 100, "hi");
+      }
+
+      function changeNumber() {
+        randomDate();
+      }
+    };
+    const clearEach = function () {
+      clearInterval(intervalID);
+      intervalID = null;
+    };
+
+    document.querySelector("#start").addEventListener("click", sayDate);
+
+    document.querySelector("#stop").addEventListener("click", clearEach);
+  </script>
+</html>
